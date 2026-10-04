@@ -500,7 +500,7 @@
                         <td class="visible-with-data" id="Deskripsi" colspan="2"><strong>Deskripsi</strong><br />' + (feature.properties['Deskripsi'] !== null ? autolinker.link(String(feature.properties['Deskripsi']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Foto'] !== null ? autolinker.link(String(feature.properties['Foto']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Bagus.jpeg'] !== null ? '<img src="images/' + String(feature.properties['Bagus.jpeg']) + '" style="width:200px; max-height:150px; object-fit:cover; border-radius:8px;">'.replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
